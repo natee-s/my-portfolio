@@ -2,7 +2,7 @@
 export const profileData = {
   name: "Natee Siriudom",
   role: "Full Stack Developer",
-  profileImage:"/public/image/img1.jpg",
+  profileImage:"/image/img1.jpg",
   description: "I'm a passionate Full Stack web developer with experience developing Full Stack web applications with MERN stack. I am strongly interested in learning new technologies and implementing them in my projects. I'm a self-motivated who is always ready to learn new things and work in a team..",
   resumeUrl: "https://drive.google.com/file/d/12os5v4qJTnKtCq6E1GXudnDUHA7eDcH_/view?usp=sharing",
 };
