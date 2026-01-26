@@ -2,6 +2,7 @@
 export const profileData = {
   name: "Natee Siriudom",
   role: "Full Stack Developer",
+  profileImage:"/public/image/img1.jpg",
   description: "I'm a passionate Full Stack web developer with experience developing Full Stack web applications with MERN stack. I am strongly interested in learning new technologies and implementing them in my projects. I'm a self-motivated who is always ready to learn new things and work in a team..",
   resumeUrl: "https://drive.google.com/file/d/12os5v4qJTnKtCq6E1GXudnDUHA7eDcH_/view?usp=sharing",
 };
@@ -20,9 +21,18 @@ export const navigationLinks = [
 ];
 
 export const skillsData = [
-  "HTML", "CSS", "Javascript/TypeScript", "React", "Node.js", 
-  "Tailwind CSS", "MongoDB", "Express", "Vite", "Python", "SQL",
-  "R", 
+  { name: "HTML", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" },
+  { name: "CSS", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" },
+  { name: "Javascript", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" },
+  { name: "React", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" },
+  { name: "Node.js", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" },
+  { name: "Tailwind CSS", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original-wordmark.svg" },
+  { name: "MongoDB", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" },
+  { name: "Express", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" },
+  { name: "Vite", icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/vitejs/vitejs-original.svg" },
+  { name: "Python", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" },
+  { name: "SQL", icon: "https://www.svgrepo.com/show/331760/sql-database-generic.svg" },
+  { name: "R", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/r/r-original.svg" },
 ];
 
 // ประวัติการทำงานและการศึกษา
