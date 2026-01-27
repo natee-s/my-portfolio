@@ -56,7 +56,8 @@ const Projects = () => {
                   href={project.link}
                   className="inline-flex items-center text-blue-600 dark:text-blue-400 font-bold hover:underline"
                 >
-                  View Details <ExternalLink size={16} className="ml-1" />
+                  Live example 
+                  <ExternalLink size={16} className="ml-1" />
                 </a>
               </div>
             </motion.div>

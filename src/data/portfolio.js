@@ -4,7 +4,7 @@ export const profileData = {
   role: "Full Stack Developer",
   profileImage: "/image/img1.jpg",
   description:
-    "I'm a passionate Full Stack web developer with experience developing Full Stack web applications with MERN stack. I am strongly interested in learning new technologies and implementing them in my projects. I'm a self-motivated who is always ready to learn new things and work in a team..",
+    "I'm a Full Stack Developer passionate about building robust web applications using the MERN stack. With a keen interest in AI integration and emerging technologies, I focus on creating scalable solutions and delivering seamless user experiences. Always learning, always building.",
   resumeUrl:
     "https://drive.google.com/file/d/12os5v4qJTnKtCq6E1GXudnDUHA7eDcH_/view?usp=sharing",
 };
@@ -111,27 +111,27 @@ export const experienceCard = [
 
 export const projectsData = [
   {
-    title: "------------",
-    description: "------------------",
-    tags: ["React", "CSS"],
+    title: "POS System",
+    description: "A lightweight, high-performance Point-of-Sale system built for modern food outlets.",
+    tags: ["React", "Tailwind CSS"],
     image:
-      "https://via.placeholder.com/600x400/3b82f6/ffffff?text=Employee+System",
-    link: "#",
+      "image/pos.png",
+    link: "https://pos-system-gilt-delta.vercel.app/",
   },
   {
-    title: "------------",
-    description: "------------------",
-    tags: ["React", "CSS"],
+    title: "Dice-Roller",
+    description: "A fun and interactive dice-rolling app created for web development practice.",
+    tags: ["HTML", "Tailwind CSS", "JavaScript"],
     image:
-      "https://via.placeholder.com/600x400/10b981/ffffff?text=Railway+Tracking",
-    link: "#",
+      "image/dice.png",
+    link: "https://jsd11-dice-roller-three.vercel.app/",
   },
   {
-    title: "------------",
-    description: "------------------",
-    tags: ["React", "API", "Tailwind"],
-    image: "https://via.placeholder.com/600x400/f59e0b/ffffff?text=Weather+App",
-    link: "#",
+    title: "E-Commerce",
+    description: "A professional MERN-stack e-commerce platform specializing in office syndrome relief products.",
+    tags: ["React", "Tailwind CSS", "Node.js", "Express.js", "MongoDB & Mongoose"],
+    image: "image/relief.png",
+    link: "https://e-commerce-eight-brown-64.vercel.app/",
   },
 ];
 
