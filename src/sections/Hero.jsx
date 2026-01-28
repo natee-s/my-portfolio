@@ -7,7 +7,7 @@ const Hero = () => {
     <section id="home" className="min-h-screen flex flex-col justify-center items-center text-center px-4 pt-16">
 
       {/*  Container หลักของวงโคจร */}
-      <div className='ralative mb-16 flex items-center justify-center'>
+      <div className='ralative mt-3 mb-10  flex items-center justify-center'>
       <motion.div
         animate={{rotate:360}}
         transition={{duration:15, repeat: Infinity, ease:"linear"}}

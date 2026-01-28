@@ -44,7 +44,7 @@ export const skillsData = [
   },
   {
     name: "Tailwind CSS",
-    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original-wordmark.svg",
+    icon: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tailwind_CSS_Logo.svg/1280px-Tailwind_CSS_Logo.svg.png?20230715030042",
   },
   {
     name: "MongoDB",
@@ -52,7 +52,7 @@ export const skillsData = [
   },
   {
     name: "Express",
-    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg",
+    icon: "https://www.manektech.com/storage/developer/1646733543.webp",
   },
   {
     name: "Vite",

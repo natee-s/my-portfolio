@@ -1,18 +1,46 @@
-import React from 'react';
 import { useForm } from 'react-hook-form';
 import { motion } from 'framer-motion';
 import { Mail, Phone, MapPin, Send } from 'lucide-react';
 import { contactData } from '../data/portfolio';
+import  axios from 'axios';
+import Swal from 'sweetalert2' ;
+
 
 const Contact = () => {
-  const { register, handleSubmit, formState: { errors } } = useForm();
+  const { register, handleSubmit,reset, formState: { errors } } = useForm();
 
-  // ฟังก์ชันนี้จะทำงานเมื่อกดส่ง (ตอนนี้เราให้มัน Log ดูค่าไปก่อน จนกว่าจะทำ Backend)
-  const onSubmit = (data) => {
-    console.log("Form Data:", data);
-    alert("ขอบคุณที่ติดต่อมา! (ระบบ Backend จะเริ่มทำงานในขั้นตอนถัดไป)");
+  // ฟังก์ชันนี้จะทำงานเมื่อกดส่ง 
+  const onSubmit = async (data) => {
+    Swal.fire({
+      title: 'sending...',
+      allowOutsideClick: false,
+      didOpen: () => {
+        Swal.showLoading();
+        }
+      })
+    try {
+      // ยิงข้อมูล (data) ที่ได้จาก react-hook-form ไปหา Backend, data คือ ข้อมูลที่ส่งไปใน req.body
+      const response = await axios.post(import.meta.env.VITE_API_URL+'/api/contact', data);
+      console.log(import.meta.env.VITE_API_URL)
+
+      if (response.status === 201) {
+        Swal.fire({
+          icon:'success',
+          title: 'Message Sent Successfully!',
+          text: 'Thank you for contacting us.'
+        })
+        reset();  //  clear form
+      }
+    }catch (error){
+        console.error("Error sending data:", error);
+        // แสดง Popup เมื่อเกิดข้อผิดพลาด
+        Swal.fire({
+          icon: 'error',
+          title: 'error',
+          text: 'error!!! Please try agin',
+      })
   };
-
+  }
   return (
     <section id="contact" className="py-20 bg-white dark:bg-slate-800 transition-colors duration-300">
       <div className="max-w-6xl mx-auto px-4">
