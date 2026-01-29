@@ -20,7 +20,7 @@ const Contact = () => {
       })
     try {
       // ยิงข้อมูล (data) ที่ได้จาก react-hook-form ไปหา Backend, data คือ ข้อมูลที่ส่งไปใน req.body
-      const response = await axios.post(import.meta.env.VITE_API_URL+'/api/contact', data);
+      const response = await axios.post(`${import.meta.env.VITE_API_UR}/api/contact`, data);
       console.log(import.meta.env.VITE_API_URL)
 
       if (response.status === 201) {
