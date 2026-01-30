@@ -131,7 +131,7 @@ export const projectsData = [
     description: "A professional MERN-stack e-commerce platform specializing in office syndrome relief products.",
     tags: ["React", "Tailwind CSS", "Node.js", "Express.js", "MongoDB & Mongoose"],
     image: "image/relief.png",
-    link: "https://e-commerce-eight-brown-64.vercel.app/",
+    link: "https://teamproject7-jsd11.vercel.app/",
   },
 ];
 
