@@ -6,6 +6,7 @@ import Skills from './sections/Skills';
 import Experience from './sections/Experience';
 import Projects from './sections/Projects';
 import Contact from './sections/Contact';
+import SocialSidebar from './components/SocialSidebar';
 
 const App = () => {
   return (
@@ -13,6 +14,7 @@ const App = () => {
       <Navbar />
       <main>
         <Hero />
+        <SocialSidebar />
         <About />
         <Skills /> 
         <Experience />
