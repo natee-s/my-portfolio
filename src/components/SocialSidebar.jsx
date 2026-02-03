@@ -38,7 +38,7 @@ const SocialSidebar = () => {    //เราจะสร้างตัวแป
                                 target="_blank"
                                 rel="noreferrer"
                                 className={`text-gray-500 ${color} transition-coloes duration-300`}
-                                aria-lable={lable}
+                                aria-label={lable}
                             >
                                 {icon}
                             </a>
