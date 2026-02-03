@@ -6,7 +6,7 @@ export const profileData = {
   description:
     "I'm a Full Stack Developer passionate about building robust web applications using the MERN stack. With a keen interest in AI integration and emerging technologies, I focus on creating scalable solutions and delivering seamless user experiences. Always learning, always building.",
   resumeUrl:
-    "https://drive.google.com/file/d/12os5v4qJTnKtCq6E1GXudnDUHA7eDcH_/view?usp=sharing",
+    "https://drive.google.com/file/d/1RreMrBPUI7Lw0wsFE43ElBFP2c-OPs3d/view?usp=sharing",
 };
 
 export const aboutData = {
