@@ -1,17 +1,18 @@
 // ใช้ ES6 Export เพื่อนำไปใช้ในไฟล์อื่น
+const aboutMeText =
+  "I am an AI-focused Full-Stack Developer blending a decade of analytical experience in Environmental and Safety Management with modern MERN stack capabilities. Driven by a commitment to continuous learning, I successfully advanced to Level 2 of the Super AI Engineer Season 6 program—selected from over 10,000 applicants to join an exclusive cohort of 150. Through intensive training and hands-on hackathons, I have honed my practical expertise in Machine Learning, predictive modeling, Big Data Analytics, and AIoT integration. I am now eager to collaborate with Engineering, Business Analysis, and Product teams to transform complex business requirements into intelligent, scalable web and mobile applications.";
+
 export const profileData = {
   name: "Natee Siriudom",
-  role: "Full Stack Developer",
+  role: "AI Engineer, Full-Stack Developer",
   profileImage: "/image/img1.jpg",
-  description:
-    "Forward-thinking AI Developer combining 10 years of analytical experience in Environmental and Safety Management with modern Full-Stack (MERN) capabilities and advanced Artificial Intelligence training through Super AI Engineer Season 6. Skilled in Machine Learning, predictive modeling, and AIoT integration, I transform complex requirements into intelligent, scalable Web and Mobile Applications. Eager to collaborate with cross-functional teams across Engineering, Business Analysis, and Product to build high-quality AI-driven solutions.",
   resumeUrl:
     "https://drive.google.com/file/d/1RreMrBPUI7Lw0wsFE43ElBFP2c-OPs3d/view?usp=sharing",
 };
 
 export const aboutData = {
-  title: "Who I am",
-  bio: "I am an AI-focused Developer combining 10 years of analytical experience in Environmental and Safety Management with modern Full-Stack (MERN) development skills. Although I began my AI journey with a very basic foundation, my commitment to continuous learning led me to apply for and pass the multi-stage selection process of Super AI Engineer Season 6. I was selected for the Level 2 advanced AI training from more than 10,000 applicants, joining a cohort of only 150 participants. Through intensive online and onsite workshops, I have strengthened my practical understanding of Machine Learning, predictive modeling, Image Processing, Natural Language Processing, Big Data Analytics, and AIoT-related applications. I also developed my ability to solve real business problems through hands-on Hackathons, teamwork, and the program's real-world workplace experience. I am now eager to collaborate with Engineering, BA, and Product teams to transform complex requirements into scalable, high-quality AI-driven Web and Mobile Applications.",
+  title: "About Me",
+  bio: aboutMeText,
 };
 
 export const navigationLinks = [
