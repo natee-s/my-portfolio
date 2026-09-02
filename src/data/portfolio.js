@@ -4,14 +4,14 @@ export const profileData = {
   role: "Full Stack Developer",
   profileImage: "/image/img1.jpg",
   description:
-    "I'm a Full Stack Developer passionate about building robust web applications using the MERN stack. With a keen interest in AI integration and emerging technologies, I focus on creating scalable solutions and delivering seamless user experiences. Always learning, always building.",
+    "Forward-thinking AI Developer combining 10 years of analytical experience in Environmental and Safety Management with modern Full-Stack (MERN) capabilities and advanced Artificial Intelligence training through Super AI Engineer Season 6. Skilled in Machine Learning, predictive modeling, and AIoT integration, I transform complex requirements into intelligent, scalable Web and Mobile Applications. Eager to collaborate with cross-functional teams across Engineering, Business Analysis, and Product to build high-quality AI-driven solutions.",
   resumeUrl:
     "https://drive.google.com/file/d/1RreMrBPUI7Lw0wsFE43ElBFP2c-OPs3d/view?usp=sharing",
 };
 
 export const aboutData = {
   title: "Who I am",
-  bio: "Highly motivated Software Developer Bootcamp graduate with a strong foundation in JavaScript/TypeScript, React, Node.js, Express, and MongoDB (Full-Stack/MERN). Bringing 10 years of professional experience in Environmental Management, emphasizing orientation to detail, problem-solving, and communication, crucial for building robust educational products. Self-driven and eager to collaborate with cross-functional teams (Engineering, UX, Product) to develop high-quality Web/Mobile Applications.",
+  bio: "I am an AI-focused Developer combining 10 years of analytical experience in Environmental and Safety Management with modern Full-Stack (MERN) development skills. Although I began my AI journey with a very basic foundation, my commitment to continuous learning led me to apply for and pass the multi-stage selection process of Super AI Engineer Season 6. I was selected for the Level 2 advanced AI training from more than 10,000 applicants, joining a cohort of only 150 participants. Through intensive online and onsite workshops, I have strengthened my practical understanding of Machine Learning, predictive modeling, Image Processing, Natural Language Processing, Big Data Analytics, and AIoT-related applications. I also developed my ability to solve real business problems through hands-on Hackathons, teamwork, and the program's real-world workplace experience. I am now eager to collaborate with Engineering, BA, and Product teams to transform complex requirements into scalable, high-quality AI-driven Web and Mobile Applications.",
 };
 
 export const navigationLinks = [
@@ -76,6 +76,17 @@ export const skillsData = [
 
 export const experienceCard = [
   {
+    image: "image/super-ai-season-6.png",
+    title: "Super AI Engineer Season 6",
+    description:
+      `I was selected to participate in the Level 2 advanced AI training of Super AI Engineer Season 6 after beginning my AI journey with only a very basic foundation. I continued developing myself, applied to the program, and progressed through its multi-stage assessment process. Being selected from more than 10,000 applicants to join a cohort of only 150 participants was a meaningful milestone in my transition into AI.
+
+      Under the theme "Hand on Hackathon: From Real Problems to Real Solutions," the program combines online and onsite intensive training with hands-on workshops and Hackathons based on real business challenges. The curriculum covers Image Processing, Signal Processing, Natural Language Processing and Understanding, Big Data Analytics, and Internet of Things and Robotics. This experience has strengthened both my AI technical foundation and my ability to collaborate, analyze requirements, and deliver practical solutions as part of a real team.
+
+      The program also extends into Level 3, where participants apply their AI skills to real workplace challenges in a partner organization for at least two months and present their individual work to the program committee. This journey has reinforced my commitment to continuous learning and to building intelligent solutions that create measurable value in real-world environments.`,
+    link: "https://superai.aiat.or.th/en/home/",
+  },
+  {
     image: "image/journey.png",
     title: "Transitioning into Tech",
     description: 
@@ -132,6 +143,20 @@ export const projectsData = [
     tags: ["React", "Tailwind CSS", "Node.js", "Express.js", "MongoDB & Mongoose"],
     image: "image/relief.png",
     link: "https://teamproject7-jsd11.vercel.app/",
+  },
+  {
+    title: "Medication VQA",
+    description: "An AI-powered medication assistant that provides information from medicine images and supports medication reminders.",
+    tags: ["AI", "Visual Question Answering", "React"],
+    image: "image/medication-vqa.jpg",
+    link: "https://my-portfolio-nine-nu-uwdfqx2mwu.vercel.app/",
+  },
+  {
+    title: "NanSafe",
+    description: "A flood monitoring platform for Nan province that helps users track water levels and receive important alerts.",
+    tags: ["React", "Data Visualization", "Vercel"],
+    image: "image/nansafe.jpg",
+    link: "https://nan-safe.vercel.app/",
   },
 ];
 

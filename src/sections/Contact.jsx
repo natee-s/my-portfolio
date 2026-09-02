@@ -1,50 +1,11 @@
-import { useForm } from 'react-hook-form';
 import { motion } from 'framer-motion';
-import { Mail, Phone, MapPin, Send } from 'lucide-react';
+import { Mail, Phone, MapPin } from 'lucide-react';
 import { contactData } from '../data/portfolio';
-import  axios from 'axios';
-import Swal from 'sweetalert2' ;
-
 
 const Contact = () => {
-  const { register, handleSubmit,reset, formState: { errors } } = useForm();
-
-  // ฟังก์ชันนี้จะทำงานเมื่อกดส่ง 
-  const onSubmit = async (data) => {
-    Swal.fire({
-      title: 'sending...',
-      allowOutsideClick: false,
-      didOpen: () => {
-        Swal.showLoading();
-        }
-      })
-    try {
-      // ยิงข้อมูล (data) ที่ได้จาก react-hook-form ไปหา Backend, data คือ ข้อมูลที่ส่งไปใน req.body
-      const response = await axios.post(`${import.meta.env.VITE_API_URL}/api/contact`, data);
-      console.log(import.meta.env.VITE_API_URL)
-
-      if (response.status === 201) {
-        Swal.fire({
-          icon:'success',
-          title: 'Message Sent Successfully!',
-          text: 'Thank you for contacting us.'
-        })
-        reset();  //  clear form
-      }
-    }catch (error){
-        console.error("Error sending data:", error);
-        // แสดง Popup เมื่อเกิดข้อผิดพลาด
-        Swal.fire({
-          icon: 'error',
-          title: 'error',
-          text: 'error!!! Please try agin',
-      })
-  };
-  }
   return (
     <section id="contact" className="py-20 bg-white dark:bg-slate-800 transition-colors duration-300">
       <div className="max-w-6xl mx-auto px-4">
-        
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-slate-900 dark:text-white mb-4">
             {contactData.title}
@@ -52,14 +13,12 @@ const Contact = () => {
           <p className="text-slate-600 dark:text-slate-400">{contactData.subtitle}</p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-12">
-          
-          {/* ฝั่งซ้าย: ข้อมูลการติดต่อ */}
-          <motion.div 
+        <div className="flex justify-center">
+          <motion.div
             initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
-            className="space-y-8"
+            className="w-full max-w-xl space-y-8"
           >
             <div className="flex items-center space-x-4">
               <div className="p-4 bg-blue-100 dark:bg-blue-900/30 text-blue-600 rounded-2xl">
@@ -91,55 +50,6 @@ const Contact = () => {
               </div>
             </div>
           </motion.div>
-
-          {/* ฝั่งขวา: ฟอร์มส่งข้อความ */}
-          <motion.form 
-            onSubmit={handleSubmit(onSubmit)}
-            initial={{ opacity: 0, x: 30 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            className="space-y-4"
-          >
-            <div>
-              <input 
-                {...register("name", { required: "กรุณากรอกชื่อ" })}
-                placeholder="Your Name"
-                className="w-full p-4 bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-700 rounded-xl focus:ring-2 focus:ring-blue-500 outline-none dark:text-white"
-              />
-              {errors.name && <span className="text-red-500 text-xs mt-1">{errors.name.message}</span>}
-            </div>
-
-            <div>
-              <input 
-                {...register("email", { 
-                  required: "กรุณากรอกอีเมล", 
-                  pattern: { value: /^\S+@\S+$/i, message: "อีเมลไม่ถูกต้อง" } 
-                })}
-                placeholder="Your Email"
-                className="w-full p-4 bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-700 rounded-xl focus:ring-2 focus:ring-blue-500 outline-none dark:text-white"
-              />
-              {errors.email && <span className="text-red-500 text-xs mt-1">{errors.email.message}</span>}
-            </div>
-
-            <div>
-              <textarea 
-                {...register("message", { required: "กรุณากรอกข้อความ" })}
-                placeholder="Your Message"
-                rows="5"
-                className="w-full p-4 bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-700 rounded-xl focus:ring-2 focus:ring-blue-500 outline-none dark:text-white"
-              ></textarea>
-              {errors.message && <span className="text-red-500 text-xs mt-1">{errors.message.message}</span>}
-            </div>
-
-            <button 
-              type="submit"
-              className="w-full py-4 bg-blue-600 hover:bg-blue-700 text-white font-bold rounded-xl transition-all flex items-center justify-center space-x-2"
-            >
-              <span>Send Message</span>
-              <Send size={18} />
-            </button>
-          </motion.form>
-
         </div>
       </div>
     </section>

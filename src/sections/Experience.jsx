@@ -30,18 +30,37 @@ const Experience = () => {
               className="bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-700 p-6 rounded-2xl shawdow-sm hover:shadow-xl transition-all duration-300"
             >
               {/* picture */}
-              <div className='w-full h-48 mb-6 overflow-hidden round-xl bg-white flex items-center justify-center'>
-                <img 
-                  src={card.image}
-                  alt={card.title}
-                  className='w-full h-full object-cover'
-                />
+              <div className='w-full h-48 mb-6 overflow-hidden rounded-xl bg-white flex items-center justify-center'>
+                {card.image ? (
+                  <img
+                    src={card.image}
+                    alt={card.title}
+                    className='w-full h-full object-cover'
+                  />
+                ) : (
+                  <div className='w-full h-full bg-gradient-to-br from-blue-700 via-indigo-600 to-cyan-500 flex flex-col items-center justify-center text-white text-center px-4'>
+                    <span className='text-sm font-semibold tracking-[0.2em] uppercase'>Selected Participant</span>
+                    <span className='text-2xl font-bold mt-2'>Super AI Engineer</span>
+                    <span className='text-lg font-medium'>Season 6</span>
+                  </div>
+                )}
               </div>
 
               {/* title */}
-              <h3 className='text-2xl font-bold text-blue-600 dark:text-blue-400 mb-4 text-center'>
-                {card.title}
-              </h3>
+              {card.link ? (
+                <a
+                  href={card.link}
+                  target='_blank'
+                  rel='noreferrer'
+                  className='block text-2xl font-bold text-blue-600 dark:text-blue-400 mb-4 text-center hover:underline'
+                >
+                  {card.title}
+                </a>
+              ) : (
+                <h3 className='text-2xl font-bold text-blue-600 dark:text-blue-400 mb-4 text-center'>
+                  {card.title}
+                </h3>
+              )}
 
               {/* context */}
               <p className='text-slate-600 dark:text-slate-300 leading-relaxed text-left whitespace-pre-line text-sm md:text-base'>
