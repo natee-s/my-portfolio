@@ -123,6 +123,28 @@ export const experienceCard = [
 
 export const projectsData = [
   {
+    title: "Car_counting",
+    description: "A computer vision project that detects and counts vehicles in traffic footage, including cars, motorcycles, trucks, and buses.",
+    tags: ["Python", "Computer Vision", "Object Detection"],
+    image: "image/car-counting.png",
+    link: "https://github.com/natee-s/Car_counting",
+    linkLabel: "GitHub",
+  },
+  {
+    title: "NanSafe",
+    description: "A flood monitoring platform for Nan province that helps users track water levels and receive important alerts.",
+    tags: ["React", "Data Visualization", "Vercel"],
+    image: "image/nansafe.jpg",
+    link: "https://nan-safe.vercel.app/",
+  },
+  {
+    title: "Medication VQA",
+    description: "An AI-powered medication assistant that provides information from medicine images and supports medication reminders.",
+    tags: ["AI", "Visual Question Answering", "React"],
+    image: "image/medication-vqa.jpg",
+    link: "https://my-portfolio-nine-nu-uwdfqx2mwu.vercel.app/",
+  },
+  {
     title: "POS System",
     description: "A lightweight, high-performance Point-of-Sale system built for modern food outlets.",
     tags: ["React", "Tailwind CSS"],
@@ -144,20 +166,6 @@ export const projectsData = [
     tags: ["React", "Tailwind CSS", "Node.js", "Express.js", "MongoDB & Mongoose"],
     image: "image/relief.png",
     link: "https://teamproject7-jsd11.vercel.app/",
-  },
-  {
-    title: "Medication VQA",
-    description: "An AI-powered medication assistant that provides information from medicine images and supports medication reminders.",
-    tags: ["AI", "Visual Question Answering", "React"],
-    image: "image/medication-vqa.jpg",
-    link: "https://my-portfolio-nine-nu-uwdfqx2mwu.vercel.app/",
-  },
-  {
-    title: "NanSafe",
-    description: "A flood monitoring platform for Nan province that helps users track water levels and receive important alerts.",
-    tags: ["React", "Data Visualization", "Vercel"],
-    image: "image/nansafe.jpg",
-    link: "https://nan-safe.vercel.app/",
   },
 ];
 
