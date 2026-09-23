@@ -7,7 +7,7 @@ export const profileData = {
   role: "AI Engineer, Full-Stack Developer",
   profileImage: "/image/img1.jpg",
   resumeUrl:
-    "https://drive.google.com/file/d/1RreMrBPUI7Lw0wsFE43ElBFP2c-OPs3d/view?usp=sharing",
+    "https://drive.google.com/file/d/18F8vy8iFQEOaq_txXo9EItwk_m1-_wW7/view?usp=sharing",
 };
 
 export const aboutData = {
