@@ -138,11 +138,11 @@ export const projectsData = [
     link: "https://nan-safe.vercel.app/",
   },
   {
-    title: "Medication VQA",
+    title: "Ginyakan",
     description: "An AI-powered medication assistant that provides information from medicine images and supports medication reminders.",
     tags: ["AI", "Visual Question Answering", "React"],
     image: "image/medication-vqa.jpg",
-    link: "https://my-portfolio-nine-nu-uwdfqx2mwu.vercel.app/",
+    link: "https://github.com/natee-s/Medication_VQA",
   },
   {
     title: "POS System",
