@@ -123,6 +123,14 @@ export const experienceCard = [
 
 export const projectsData = [
   {
+    title: "Business Dashboard",
+    description: "An interactive business dashboard that turns POS data into insights on sales, profits, and product performance.",
+    tags: ["Next.js", "TypeScript", "Tailwind CSS", "Recharts"],
+    image: "image/business-dashboard.png",
+    link: "https://github.com/natee-s/Business-Dashboard",
+    linkLabel: "GitHub",
+  },
+  {
     title: "Car_counting",
     description: "A computer vision project that detects and counts vehicles in traffic footage, including cars, motorcycles, trucks, and buses.",
     tags: ["Python", "Computer Vision", "Object Detection"],
