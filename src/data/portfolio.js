@@ -123,6 +123,14 @@ export const experienceCard = [
 
 export const projectsData = [
   {
+    title: "PPE Detection",
+    description: "A real-time AI computer vision system for detecting Personal Protective Equipment (PPE) such as safety helmets, reflective vests, and safety shoes in industrial workplaces to enhance safety compliance.",
+    tags: ["Python", "Computer Vision", "Object Detection", "AI"],
+    image: "image/ppe-detection.png",
+    link: "/PPE detection.mp4",
+    linkLabel: "Live Demo",
+  },
+  {
     title: "Business Dashboard",
     description: "An interactive business dashboard that turns POS data into insights on sales, profits, and product performance.",
     tags: ["Next.js", "TypeScript", "Tailwind CSS", "Recharts"],

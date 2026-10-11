@@ -54,6 +54,8 @@ const Projects = () => {
 
                 <a 
                   href={project.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="inline-flex items-center text-blue-600 dark:text-blue-400 font-bold hover:underline"
                 >
                   {project.linkLabel || 'Live example'}
