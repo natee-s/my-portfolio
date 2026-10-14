@@ -77,6 +77,17 @@ export const skillsData = [
 
 export const experienceCard = [
   {
+    image: "image/super-ai-bronze.png",
+    title: "Zero to Bronze Medal",
+    description:
+      `Starting with near-zero background in AI from a career in Environmental and Safety Management, stepping into the Super AI Engineer Season 6 program was an ambitious leap outside my comfort zone. Selected from over 10,000 applicants nationwide, I progressed through five rigorous assessment rounds and intense hackathons to secure a spot in the final cohort of approximately 100 participants.
+
+      During the Level 2 residential boot camp, I tackled high-pressure challenges beginning with a 24-hour hackathon on day one and collaborating through late-night problem-solving. This intensive experience built my practical competencies across Computer Vision, Signal Processing, Natural Language Processing, and Big Data Analytics.
+
+      In Level 3, I developed a HealthTech solution—an Intelligent Pharmacist Assistant featuring prescription label reading (VQA), smart medication reminders, and multilingual support for diverse patient groups. Through comprehensive evaluation across all phases, I was honored to receive the Bronze Medal. Today, I combine my operational domain knowledge with AI engineering skills to act as an effective bridge between business end-users and technical teams.`,
+    link: "https://lnkd.in/p/g_MKtRfr",
+  },
+  {
     image: "image/super-ai-season-6.png",
     title: "Super AI Engineer Season 6",
     description:
