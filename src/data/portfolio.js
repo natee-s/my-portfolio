@@ -123,6 +123,14 @@ export const experienceCard = [
 
 export const projectsData = [
   {
+    title: "HoloMaintenance",
+    description: "An interactive spatial computing and AR maintenance training lab featuring real-time hand gesture tracking (pinch, rotate, explode/assemble) for 3D industrial machinery inspection.",
+    tags: ["React", "Three.js", "TypeScript", "MediaPipe"],
+    image: "image/holo-maintenance.png",
+    link: "https://lnkd.in/p/gQdsiTeT",
+    linkLabel: "Live Demo",
+  },
+  {
     title: "PPE Detection",
     description: "A real-time AI computer vision system for detecting Personal Protective Equipment (PPE) such as safety helmets, reflective vests, and safety shoes in industrial workplaces to enhance safety compliance.",
     tags: ["Python", "Computer Vision", "Object Detection", "AI"],
